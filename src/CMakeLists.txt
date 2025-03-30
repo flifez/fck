@@ -1,0 +1,5 @@
+add_subdirectory(Common)
+add_subdirectory(Components)
+add_subdirectory(Debug)
+add_subdirectory(Event)
+add_subdirectory(Registry)

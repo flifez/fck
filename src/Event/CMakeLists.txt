@@ -1,0 +1,1 @@
+target_sources(fck.Core PRIVATE event.h event.cpp)
