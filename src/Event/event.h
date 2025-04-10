@@ -15,7 +15,7 @@ namespace fck {
         virtual ~Event() = default;
         [[nodiscard]] virtual EventType get_type() const = 0;
         Event(const Event&) = delete;
-        Event& operator=(Event&) = delete;
+        Event& operator=(const Event&) = delete;
 
         Event(Event&&) = default;
         Event& operator=(Event&&) = default;

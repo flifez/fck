@@ -8,6 +8,7 @@
 
 namespace fck {
     Registry::~Registry() = default;
+    
 
     void Registry::initialize() {
         auto ctx = std::static_pointer_cast<IRegistryContext>(shared_from_this());
@@ -70,6 +71,7 @@ namespace fck {
         }
 }
 
+    std::shared_ptr<Registry> Registry::clone() {
 
-
+    }
 }

@@ -18,6 +18,7 @@ namespace fck {
         Component& operator=(Component&&) = default;
 
         [[nodiscard]] virtual ComponentType get_type() const = 0;
+
         [[nodiscard]] virtual bool has_input() const { return false; }
         [[nodiscard]] virtual bool has_multiple_input() const { return false; }
         [[nodiscard]] virtual bool has_output() const { return false; }

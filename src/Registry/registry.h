@@ -26,6 +26,8 @@ namespace fck {
         void add_component(ComponentPtr component) override;
         void connect(ComponentPtr from, ComponentPtr to);
 
+        std::shared_ptr<Registry> clone();
+
         friend class Debug;
     private:
         std::unique_ptr<ComponentFactory> component_factory;
